@@ -43,3 +43,9 @@ function calculateResult() {
     document.getElementById("resultStatus").textContent = "Result: " + result;
     document.getElementById("result").style.display = "block";
 }
+
+// Handle form submission
+document.getElementById("resultForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent page reload
+    calculateResult();
+});
